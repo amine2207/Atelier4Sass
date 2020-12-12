@@ -1,0 +1,96 @@
+body {
+  background-color: aqua;
+}
+
+.btn, .btn-danger {
+  color: #d62b2b;
+  width: 200px;
+  height: 50px;
+}
+
+nav ul {
+  display: block;
+  list-style: none;
+}
+nav ul li a {
+  font-weight: bold;
+  color: #d62b2b;
+}
+nav ul li a :hover {
+  background-color: gray;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.p-1 {
+  padding: 0 0.25rem;
+}
+
+.p-2 {
+  padding: 0 0.5rem;
+}
+
+.p-3 {
+  padding: 0 0.75rem;
+}
+
+.p-4 {
+  padding: 0 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.navlogo
+{
+  background:white;
+  border-radius: 10px;
+}
+
+.BIG_DATA
+{
+  background-image: url('../images/Big-Data-In-Retail.png');
+  background-repeat: none;
+}
+
+.title_about
+{
+  color:orangered;
+}
+.title_contact
+{
+  color:orangered;
+}
+
+
+.ourservices_logo
+{
+  border-radius: 10px;
+}
+
+.contact_logo
+{
+  background-color:orangered ;
+}
+
+.row_about
+{
+  display: inline-flex;
+  height: 100px;
+  border-radius: 10px;
+  flex-flow: row wrap;
+  align-content: space-between;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  text-justify: center;
+}
+
+.space
+{
+  margin-left: 100px;
+}

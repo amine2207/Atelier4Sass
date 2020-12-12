@@ -1,0 +1,48 @@
+$primary : rgb(214, 43, 43);
+$secondary: gray;
+body{
+    background-color: aqua; 
+}
+.btn{
+    color: $primary;
+    width: 200px;
+    height: 50px;
+}
+.btn-danger{
+    @extend .btn;
+}
+nav{
+    ul{
+        display: block;
+        list-style: none;
+    
+     li{
+         a{
+            font-weight: bold;
+            color: $primary;
+            :hover{
+                background-color: $secondary ;
+            }
+          }
+        }
+    }
+}
+//repeter une partie qui se répéte avec @mixin
+@mixin flex ($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    flex-direction: $direction;
+}
+//Appel @Mixin avec @include
+.box
+{
+    @include flex(column);
+}
+
+//# heya p mel 1 -> 5
+@for $var from 1 to 5 {
+    .p-#{$var} {
+        padding: 0 ($var*0.25rem);
+    }
+}
